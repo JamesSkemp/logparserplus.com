@@ -1,4 +1,4 @@
-mage: alpine:3.4
+image: alpine:3.4
 
 before_script:
   - apk update && apk add openssl
