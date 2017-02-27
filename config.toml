@@ -1,3 +1,4 @@
 baseurl = "http://logparserplus.com/"
 title = "Log Parser Plus"
 languageCode = "en-us"
+theme = "blank"
