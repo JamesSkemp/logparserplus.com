@@ -1,10 +1,21 @@
 {{ partial "header.html" . }}
-	<main>
-		{{ $paginator := .Paginate (where .Site.Pages "Type" "post") }}
-		{{ range $paginator.Pages }}
-			{{ partial "summary.html" . }}
-		{{ end }}
-		{{ partial "pagination.html" . }}
-	</main>
-{{ partial "sidebar.html" . }}
+	<div id="content">
+		<p>The following content is available:</p>
+		<ul>
+			<li><a href="/Article">Listing of Log Parser articles/tutorials</a> (<a href="/Home/ArticlesFeed">subscribe via RSS</a>)<br />
+				Articles written to help you use Log Parser.</li>
+			<li><a href="/Expressions">Listing of Log Parser expressions</a> (added 02/28/2010)</li>
+			<li><a href="/Functions">Listing of Log Parser functions</a> (updated 07/06/2011)<br />
+				Here&rsquo;s what functions Log Parser contains, as well as examples on how to use them, and what functions are related.</li>
+			<li><a href="/Examples">Listing of Log Parser queries</a> (updated 07/07/2011)<br />
+				Example, pre-defined, queries to help you get the most out of Microsoft&rsquo;s Log Parser, as quickly as possible.</li>
+		</ul>
+		<p>The following content is available on other sites:</p>
+		<ul>
+			<li><a href="http://jamesrskemp.com/apps/LogParserPlus?logparserplus.com">Log Parser Plus application</a> (by James Skemp of StrivingLife.com)<ul>
+				<li>Source for Log Parser Plus application can be found <a href="https://github.com/JamesSkemp/LogParserPlusApp">on GitHub</a>.</li>
+			</ul></li>
+			<li><a href="http://jamesrskemp.com/apps/IISLogsToSQLite?logparserplus.com">Utility to import IIS Logs into a SQLite application</a> (beta version of application) (by James Skemp of StrivingLife.com)</li>
+		</ul>
+	</div>
 {{ partial "footer.html" . }}
