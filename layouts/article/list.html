@@ -1,17 +1,6 @@
 {{ partial "header.html" . }}
 	<div id="content">
-		<div class="advert aSide">
-			<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-			<!-- LogParserPlus responsive -->
-			<ins class="adsbygoogle"
-				style="display:block"
-				data-ad-client="ca-pub-3526066001929698"
-				data-ad-slot="3629527292"
-				data-ad-format="auto"></ins>
-			<script>
-				(adsbygoogle = window.adsbygoogle || []).push({});
-			</script>
-		</div>
+		{{ partial "ad.html" . }}
 
 		<h2>Articles</h2>
 
@@ -25,7 +14,6 @@
 					<em>{{ .Date.Format "1/2/2006" }}</em>
 				</li>
 			{{ end }}
-
 		</ul>
 
 		<h3>External resources</h3>
