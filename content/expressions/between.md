@@ -5,12 +5,12 @@ title = "between"
 
 +++
 
-## Syntax
+#### Syntax
 	<field_expr> [ NOT ] BETWEEN <field_expr> AND <field_expr>
 
-## Description
+#### Description
 The BETWEEN operator determines if a given field-expression belongs to a specified interval.
 
-## Examples
+#### Examples
 - `sc-status BETWEEN 400 AND 499`
 Returns requests with a status code from 400 to 499, inclusive.

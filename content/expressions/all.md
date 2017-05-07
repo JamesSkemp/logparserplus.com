@@ -5,8 +5,8 @@ name = "ALL"
 
 +++
 
-## Syntax
+#### Syntax
 	<field_expr> <rel_op> ALL ( <value_rows> ) | ( <field_expr_list> ) <rel_op> ALL ( <value_rows> )
 
-## Description
+#### Description
 The ALL operator compares a given field-expression with a list of values, returning TRUE if all values in the list satisfy the comparison operation, or FALSE if not all values satisfy the comparison.
