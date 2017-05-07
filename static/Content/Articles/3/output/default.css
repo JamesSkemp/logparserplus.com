@@ -1,0 +1,69 @@
+H1 {
+	font : bold 14pt Verdana, Geneva, Arial, Helvetica, sans-serif;
+	color : #4F4B7A;
+	}
+
+H2 {
+	font : bold 10pt Verdana, Geneva, Arial, Helvetica, sans-serif;
+	color : #313131;
+	}	
+	
+H3 {
+	font : bold 9pt Verdana, Geneva, Arial, Helvetica, sans-serif;
+	color : black;
+	}	
+
+H4 {
+	font : bold 8pt Verdana, Geneva, Arial, Helvetica, sans-serif;
+	color : black;
+	}	
+
+H5 {
+	font : 8pt Verdana, Geneva, Arial, Helvetica, sans-serif;
+	color : black;
+	}	
+
+H6 {
+	font :  italic 8pt Verdana, Geneva, Arial, Helvetica, sans-serif;
+	color : black;
+	}	
+	
+BODY {
+	font : 8pt Verdana, Geneva, Arial, Helvetica, sans-serif;
+	color : black;
+	margin-left :6px;
+	margin-right : 6px;
+	}	
+
+
+A {
+	color: #000182;
+	text-decoration: none;
+}
+
+A:HOVER {
+	color: #FFA500;
+	text-decoration: none;
+}
+TD {
+	COLOR: Black; FONT: 11px Verdana, arial, geneva, helvetica, sans-serif;
+			border : 0px solid #F3F3F3;
+			vertical-align : top;
+			background-color : #EFF4F3;
+			}
+TH {
+	COLOR: Black; FONT: 11px  Verdana, arial, geneva, helvetica, sans-serif;
+	background-color : #AAB6B6;
+	text-align : left;
+}
+		
+SELECT {
+	COLOR: Black; FONT: 10px/13px Verdana, arial, geneva, helvetica, sans-serif;
+}
+INPUT {
+	COLOR: Black; FONT: 10px/13px Verdana, arial, geneva, helvetica, sans-serif;
+}
+TEXTAREA {
+	FONT: 10px/13px Verdana, arial, geneva, helvetica, sans-serif;
+}
+

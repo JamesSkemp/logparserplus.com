@@ -1,0 +1,5 @@
+URI                        Hits filename 
+-------------------------- ---- -------------------------
+/examples/queries.aspx     122  queries.aspx
+/logparserfunctions.aspx   72   logparserfunctions.aspx
+/logparserexpressions.aspx 5    logparserexpressions.aspx

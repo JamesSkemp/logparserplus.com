@@ -1,0 +1,4 @@
+URI                      AvgResponse filename 
+------------------------ ----------- -----------------------
+/logparserfunctions.aspx 328         logparserfunctions.aspx
+/examples/queries.aspx   307         queries.aspx

@@ -16,4 +16,4 @@ The IN and NOT IN operators determine whether or not a given field-expression or
 When used in a WHERE clause, excludes requests for common image formats.
 - See [Removing potential bots from query results][article-5] for an example using a nested query.
 
-[article-5]: /Article/5
+[article-5]: /article/5
