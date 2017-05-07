@@ -1,0 +1,43 @@
+{{ partial "header.html" . }}
+	<div id="content">
+		<div class="advert aSide">
+			<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+			<!-- LogParserPlus responsive -->
+			<ins class="adsbygoogle"
+				style="display:block"
+				data-ad-client="ca-pub-3526066001929698"
+				data-ad-slot="3629527292"
+				data-ad-format="auto"></ins>
+			<script>
+				(adsbygoogle = window.adsbygoogle || []).push({});
+			</script>
+		</div>
+
+		<h2>Articles</h2>
+
+		<p>The following articles have been written to help individuals use Microsoft Log Parser. <a href="/Home/ArticlesFeed">Subscribe via RSS</a>.</p>
+
+		<ul>
+			{{ range .Data.Pages }}
+				<li>
+					<a href="{{ .Permalink }}">{{ .Title }}</a><br />
+					{{ .Description }}
+					<em>{{ .Date.Format "1/2/2006" }}</em>
+				</li>
+			{{ end }}
+
+		</ul>
+
+		<h3>External resources</h3>
+		<ul>
+			<li><a href="http://words.strivinglife.com/post/How-to-get-started-with-Microsoft-Log-Parser/" rel="external">How to get started with Microsoft Log Parser</a> (by James Skemp of StrivingLife.com)</li>
+			<li><a href="http://words.strivinglife.com/post/A-brief-overview-of-IIS-60-and-the-W3C-extended-log-format/" rel="external">A brief overview of IIS 6.0 and the W3C extended log format</a> (by James Skemp of StrivingLife.com)</li>
+			<li><a href="http://words.strivinglife.com/post/Microsoft-Log-Parser-timestamp-formats/" rel="external">Microsoft Log Parser timestamp formats</a> (by James Skemp of StrivingLife.com)</li>
+		</ul>
+
+		<br style="clear:both;" />
+
+		{{ partial "disqus.html" . }}
+
+	</div>
+{{ partial "footer.html" . }}
