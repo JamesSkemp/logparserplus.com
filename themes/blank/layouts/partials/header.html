@@ -1,13 +1,33 @@
 <!DOCTYPE html>
-<html lang="{{ .Site.LanguageCode | default "en-us" }}">
+<html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 	<title>{{ .Title }}</title>
+	<meta name="application-name" content="Log Parser Plus - Queries to help you analyze logs"/>
+	<meta name="msapplication-starturl" content="/" />
+	<meta name="msapplication-task" content="name=Articles;action-uri=/Article?pin=1;icon-uri=/Content/Articles.ico" />
+	<meta name="msapplication-task" content="name=Expressions;action-uri=/Expressions?pin;icon-uri=/Content/Expressions.ico" />
+	<meta name="msapplication-task" content="name=Functions;action-uri=/Functions?pin;icon-uri=/Content/Functions.ico" />
+	<meta name="msapplication-task" content="name=Queries;action-uri=/Examples?pin;icon-uri=/Content/Queries.ico" />
+
+	<link href="/Content/Site.css" rel="stylesheet" type="text/css" />
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+	<script type="text/javascript" src="/Scripts/jquery-migrate-1.1.1.min.js"></script>
+	<script type="text/javascript">
+		var _gaq = [['_setAccount', 'UA-541034-13'], ['_trackPageview'], ['_trackPageLoadTime']];
+		(function (d, t) {
+			var g = d.createElement(t), s = d.getElementsByTagName(t)[0]; g.async = 1;
+			g.src = ('https:' == location.protocol ? '//ssl' : '//www') + '.google-analytics.com/ga.js';
+			s.parentNode.insertBefore(g, s)
+		} (document, 'script'));
+		window.google_analytics_uacct = "UA-541034-13";
+	</script>
+
 	{{ with .Site.Params.description }}<meta name="description" content="{{ . }}">{{ end }}
 	{{ with .Site.Params.author }}<meta name="author" content="{{ . }}">{{ end }}
-	<link rel="stylesheet" href="{{ .Site.BaseURL }}css/style.css">
+	<link rel="stylesheet" href="/css/style.css">
 	{{ if .RSSLink -}}<link href="{{ .RSSLink }}" rel="feed" type="application/rss+xml" title="{{ .Site.Title }}">{{- end }}
 	{{ .Hugo.Generator }}
 </head>
@@ -22,3 +42,18 @@
 			</ul>
 		</nav>
 	</header>
+	<div id="siteWrapper">
+		<div id="header">
+			<h1><img src="/Content/logo.jpg" alt="Log Parser Plus" title="Log Parser Plus" style="width:550px;height:80px;" /><span>Log Parser Plus</span></h1>
+			<p class="subtitle">Queries to help you analyze logs</p>
+		</div>
+		<div id="menu">
+			<ul>
+				<li><a href="/">Home</a></li>
+				<li><a href="/Article">Articles</a></li>
+				<li><a href="/Expressions">Expressions</a></li>
+				<li><a href="/Functions">Functions</a></li>
+				<li><a href="/Examples">Example queries</a></li>
+				<li><a href="/Home/Feedback">Feedback</a></li>
+			</ul>
+		</div>
