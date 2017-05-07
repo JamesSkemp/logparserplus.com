@@ -1,0 +1,27 @@
+{{ partial "header.html" . }}
+	<div id="content">
+		{{ partial "ad.html" . }}
+
+		<h2>{{ .Title }}</h2>
+
+		<p style="font-size:.9em;">
+			Added {{ .Date.Format "1/2/2006 3:04:05 PM" }}
+			{{ if isset .Params "updated" }}
+				and updated {{ dateFormat "1/2/2006 3:04:05 PM" .Params.updated }}
+			{{ end }}
+		</p>
+
+		<div id="articleSummary">
+			{{ .Description }}
+		</div>
+
+		<div id="articleContent">
+			{{ .Content }}
+		</div>
+
+		<p><a href="/article/">Back to List</a></p>
+
+		{{ partial "disqus.html" . }}
+
+	</div>
+{{ partial "footer.html" . }}
