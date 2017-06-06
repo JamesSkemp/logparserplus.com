@@ -46,15 +46,15 @@ foreach (var xmlItem in xmlItems)
 	{
 		fileData.AppendFormat("keywords = [\"{0}\"]" + Environment.NewLine, string.Join("\", \"", keywords));
 	}
-	fileData.AppendFormat("statement-parameters = \"{0}\"" + Environment.NewLine, xmlItem.Element("statement").Element("parameters").Value);
-	fileData.AppendFormat("statement-select = \"{0}\"" + Environment.NewLine, xmlItem.Element("statement").Element("select").Value);
-	fileData.AppendFormat("statement-using = \"{0}\"" + Environment.NewLine, xmlItem.Element("statement").Element("using").Value);
-	fileData.AppendFormat("statement-into = \"{0}\"" + Environment.NewLine, xmlItem.Element("statement").Element("into").Value);
-	fileData.AppendFormat("statement-from = \"{0}\"" + Environment.NewLine, xmlItem.Element("statement").Element("from").Value);
-	fileData.AppendFormat("statement-where = \"{0}\"" + Environment.NewLine, xmlItem.Element("statement").Element("where").Value);
-	fileData.AppendFormat("statement-groupby = \"{0}\"" + Environment.NewLine, xmlItem.Element("statement").Element("groupBy").Value);
-	fileData.AppendFormat("statement-having = \"{0}\"" + Environment.NewLine, xmlItem.Element("statement").Element("having").Value);
-	fileData.AppendFormat("statement-orderby = \"{0}\"" + Environment.NewLine, xmlItem.Element("statement").Element("orderBy").Value);
+	fileData.AppendFormat("statementParameters = \"{0}\"" + Environment.NewLine, xmlItem.Element("statement").Element("parameters").Value);
+	fileData.AppendFormat("statementSelect = \"{0}\"" + Environment.NewLine, xmlItem.Element("statement").Element("select").Value);
+	fileData.AppendFormat("statementUsing = \"{0}\"" + Environment.NewLine, xmlItem.Element("statement").Element("using").Value);
+	fileData.AppendFormat("statementInto = \"{0}\"" + Environment.NewLine, xmlItem.Element("statement").Element("into").Value);
+	fileData.AppendFormat("statementFrom = \"{0}\"" + Environment.NewLine, xmlItem.Element("statement").Element("from").Value);
+	fileData.AppendFormat("statementWhere = \"{0}\"" + Environment.NewLine, xmlItem.Element("statement").Element("where").Value);
+	fileData.AppendFormat("statementGroupby = \"{0}\"" + Environment.NewLine, xmlItem.Element("statement").Element("groupBy").Value);
+	fileData.AppendFormat("statementHaving = \"{0}\"" + Environment.NewLine, xmlItem.Element("statement").Element("having").Value);
+	fileData.AppendFormat("statementOrderby = \"{0}\"" + Environment.NewLine, xmlItem.Element("statement").Element("orderBy").Value);
 	if (!string.IsNullOrWhiteSpace(xmlItem.Element("notes").Value))
 	{
 		fileData.AppendFormat("notes = \"{0}\"" + Environment.NewLine, xmlItem.Element("notes").Value);
