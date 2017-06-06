@@ -1,6 +1,6 @@
 +++
 name = "SUM"
-syntax = "SUM( [ DISTINCT | ALL ] &lt;field_expr&gt; )"
+syntax = "SUM( [ DISTINCT | ALL ] <field_expr> )"
 description = "Returns the sum of all the values, or only the DISTINCT values, of the specified field-expression."
 type = "aggregate"
 +++

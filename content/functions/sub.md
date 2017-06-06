@@ -1,6 +1,6 @@
 +++
 name = "SUB"
-syntax = "SUB( minuend &lt;any type&gt;, subtrahend &lt;any type&gt; )"
+syntax = "SUB( minuend <any type>, subtrahend <any type> )"
 description = "Calculates the difference of two values."
 type = "arithmetical"
 related = ["ADD", "DIV", "MUL"]

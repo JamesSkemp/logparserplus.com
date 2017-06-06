@@ -1,6 +1,6 @@
 +++
 name = "EXTRACT_TOKEN"
-syntax = "EXTRACT_TOKEN( argument &lt;STRING&gt;, index &lt;INTEGER&gt; [ , separator &lt;STRING&gt; ] )"
+syntax = "EXTRACT_TOKEN( argument <STRING>, index <INTEGER> [ , separator <STRING> ] )"
 description = "Splits the string into substrings at each point where the separator occurs, and returns the substring with the specified index."
 type = "string manipulation"
 related = ["EXTRACT_EXTENSION", "EXTRACT_FILENAME", "EXTRACT_PATH", "EXTRACT_PREFIX", "EXTRACT_SUFFIX", "EXTRACT_VALUE"]

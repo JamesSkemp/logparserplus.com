@@ -1,6 +1,6 @@
 +++
 name = "MAX"
-syntax = "MAX( [ DISTINCT | ALL ] &lt;field_expr&gt; )"
+syntax = "MAX( [ DISTINCT | ALL ] <field_expr> )"
 description = "Returns the maximum value among all the values of the specified field-expression."
 type = "aggregate"
 related = ["MIN"]

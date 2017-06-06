@@ -1,6 +1,6 @@
 +++
 name = "EXTRACT_EXTENSION"
-syntax = "EXTRACT_EXTENSION( filepath &lt;STRING&gt; )"
+syntax = "EXTRACT_EXTENSION( filepath <STRING> )"
 description = "Returns the file extension portion of a file path."
 type = "string manipulation"
 related = ["EXTRACT_FILENAME", "EXTRACT_PATH", "EXTRACT_PREFIX", "EXTRACT_SUFFIX", "EXTRACT_TOKEN", "EXTRACT_VALUE"]

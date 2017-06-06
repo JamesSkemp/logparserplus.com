@@ -1,6 +1,6 @@
 +++
 name = "TO_STRING"
-syntax = "TO_STRING( argument &lt;INTEGER | REAL&gt; ) | ( timestamp &lt;TIMESTAMP&gt;, format &lt;STRING&gt; )"
+syntax = "TO_STRING( argument <INTEGER | REAL> ) | ( timestamp <TIMESTAMP>, format <STRING> )"
 description = "Converts a value of the REAL or INTEGER data type into a value of the STRING data type."
 type = "conversion"
 +++

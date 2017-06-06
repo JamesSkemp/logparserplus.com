@@ -1,6 +1,6 @@
 +++
 name = "QUANTIZE"
-syntax = "QUANTIZE( argument &lt;INTEGER | REAL | TIMESTAMP&gt;, quantization &lt;INTEGER | REAL&gt; )"
+syntax = "QUANTIZE( argument <INTEGER | REAL | TIMESTAMP>, quantization <INTEGER | REAL> )"
 description = "Truncates a value to the nearest multiple of another value."
 type = "arithmetical"
 +++

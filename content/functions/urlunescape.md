@@ -1,6 +1,6 @@
 +++
 name = "URLUNESCAPE"
-syntax = "URLUNESCAPE( url &lt;STRING&gt; [ , codepage &lt;INTEGER&gt; ] )"
+syntax = "URLUNESCAPE( url <STRING> [ , codepage <INTEGER> ] )"
 description = "Converts a URL-encoded string into its plain, unencoded form."
 type = "string manipulation"
 related = ["URLESCAPE"]

@@ -1,6 +1,6 @@
 +++
 name = "TO_TIME"
-syntax = "TO_TIME( timestamp &lt;TIMESTAMP&gt; )"
+syntax = "TO_TIME( timestamp <TIMESTAMP> )"
 description = "Converts a full timestamp into a time-only timestamp."
 type = "conversion"
 related = ["TO_LOCALTIME", "TO_DATE"]

@@ -1,6 +1,6 @@
 +++
 name = "REVERSEDNS"
-syntax = "REVERSEDNS( ipAddress &lt;STRING&gt; )"
+syntax = "REVERSEDNS( ipAddress <STRING> )"
 description = "Resolves an IP address and returns the corresponding host name."
 type = "system information"
 +++

@@ -1,6 +1,6 @@
 +++
 name = "TO_LOCALTIME"
-syntax = "TO_LOCALTIME( timestamp &lt;TIMESTAMP&gt; )"
+syntax = "TO_LOCALTIME( timestamp <TIMESTAMP> )"
 description = "Converts a timestamp from Universal Time Coordinates (UTC) time into local time."
 type = "conversion"
 related = ["TO_UTCTIME"]

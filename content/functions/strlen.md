@@ -1,6 +1,6 @@
 +++
 name = "STRLEN"
-syntax = "STRLEN( string &lt;STRING&gt; )"
+syntax = "STRLEN( string <STRING> )"
 description = "Returns the length of a string."
 type = "string manipulation"
 +++

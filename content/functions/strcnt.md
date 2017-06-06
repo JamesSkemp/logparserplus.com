@@ -1,6 +1,6 @@
 +++
 name = "STRCNT"
-syntax = "STRCNT( string &lt;STRING&gt;, token &lt;STRING&gt; )"
+syntax = "STRCNT( string <STRING>, token <STRING> )"
 description = "Returns the number of occurrences of a substring in a string."
 type = "string manipulation"
 +++

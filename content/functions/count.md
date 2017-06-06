@@ -1,6 +1,6 @@
 +++
 name = "COUNT"
-syntax = "COUNT( [ DISTINCT | ALL ] * ) | ( [ DISTINCT | ALL ] &lt;field_expr_list&gt; )"
+syntax = "COUNT( [ DISTINCT | ALL ] * ) | ( [ DISTINCT | ALL ] <field_expr_list> )"
 description = "Returns the number of items in a group."
 type = "aggregate"
 +++

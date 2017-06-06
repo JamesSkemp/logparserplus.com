@@ -1,6 +1,6 @@
 +++
 name = "TO_TIMESTAMP"
-syntax = "TO_TIMESTAMP( dateTime1 &lt;TIMESTAMP&gt;, dateTime2 &lt;TIMESTAMP&gt; ) | ( string &lt;STRING&gt;, format &lt;STRING&gt; ) ( seconds &lt;INTEGER | REAL&gt; )"
+syntax = "TO_TIMESTAMP( dateTime1 <TIMESTAMP>, dateTime2 <TIMESTAMP> ) | ( string <STRING>, format <STRING> ) ( seconds <INTEGER | REAL> )"
 description = "Parses a string representing a timestamp and returns a value of the TIMESTAMP data type. See also <a href="http://strivinglife.com/words/post/Microsoft-Log-Parser-timestamp-formats.aspx">Microsoft Log Parser timestamp formats</a> by James Skemp. There seems to be no difference between using TO_TIMESTAMP() and just TIMESTAMP()."
 type = "conversion"
 +++

@@ -1,6 +1,6 @@
 +++
 name = "SQR"
-syntax = "SQR( argument &lt;INTEGER | REAL&gt; )"
+syntax = "SQR( argument <INTEGER | REAL> )"
 description = "Calculates the square of the specified argument."
 type = "arithmetical"
 +++

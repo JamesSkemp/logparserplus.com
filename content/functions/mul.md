@@ -1,6 +1,6 @@
 +++
 name = "MUL"
-syntax = "MUL( multiplicand &lt;INTEGER | REAL&gt;, multiplier &lt;INTEGER | REAL&gt; )"
+syntax = "MUL( multiplicand <INTEGER | REAL>, multiplier <INTEGER | REAL> )"
 description = "Calculates the product of two values."
 type = "arithmetical"
 related = ["DIV", "ADD", "SUB"]

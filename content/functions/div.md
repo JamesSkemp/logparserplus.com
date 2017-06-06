@@ -1,6 +1,6 @@
 +++
 name = "DIV"
-syntax = "DIV( dividend &lt;INTEGER | REAL&gt;, divisor &lt;INTEGER | REAL&gt; )"
+syntax = "DIV( dividend <INTEGER | REAL>, divisor <INTEGER | REAL> )"
 description = "Calculates the quotient of two values."
 type = "arithmetical"
 related = ["MUL", "ADD", "SUB"]

@@ -1,6 +1,6 @@
 +++
 name = "RESOLVE_SID"
-syntax = "RESOLVE_SID( sid &lt;STRING&gt; [ , computerName &lt;STRING&gt; ] )"
+syntax = "RESOLVE_SID( sid <STRING> [ , computerName <STRING> ] )"
 description = "Resolves a SID and returns its full account name."
 type = "system information"
 +++
