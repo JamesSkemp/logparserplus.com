@@ -84,7 +84,7 @@ foreach (var xmlItem in xmlItems)
 	}
 	if (!string.IsNullOrWhiteSpace(xmlItem.Element("notes").Value))
 	{
-		fileData.AppendFormat("notes = \"{0}\"" + Environment.NewLine, xmlItem.Element("notes").Value);
+		fileData.AppendFormat("notes = \"{0}\"" + Environment.NewLine, xmlItem.Element("notes").Value.Replace("\"", "\\\""));
 	}
 
 
