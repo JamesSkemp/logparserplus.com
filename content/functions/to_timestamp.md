@@ -1,7 +1,7 @@
 +++
 name = "TO_TIMESTAMP"
 syntax = "TO_TIMESTAMP( dateTime1 <TIMESTAMP>, dateTime2 <TIMESTAMP> ) | ( string <STRING>, format <STRING> ) ( seconds <INTEGER | REAL> )"
-description = "Parses a string representing a timestamp and returns a value of the TIMESTAMP data type. See also <a href="http://strivinglife.com/words/post/Microsoft-Log-Parser-timestamp-formats.aspx">Microsoft Log Parser timestamp formats</a> by James Skemp. There seems to be no difference between using TO_TIMESTAMP() and just TIMESTAMP()."
+description = "Parses a string representing a timestamp and returns a value of the TIMESTAMP data type."
 type = "conversion"
 +++
 
@@ -14,3 +14,6 @@ type = "conversion"
   Creates a timestamp of February 25, 2010, at 10:15 in the morning.
 - `TO_TIMESTAMP('24 Jun 2011 13:22:21', 'dd MMM yyyy HH:mm:ss')`  
   Creates a timestamp of a date/time in 'short' format.
+
+#### See also
+See also [Microsoft Log Parser timestamp formats](http://words.strivinglife.com/post/Microsoft-Log-Parser-timestamp-formats/) by James Skemp. There seems to be no difference between using `TO_TIMESTAMP()` and just `TIMESTAMP()`.
