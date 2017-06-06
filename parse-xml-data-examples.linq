@@ -55,7 +55,10 @@ foreach (var xmlItem in xmlItems)
 	fileData.AppendFormat("statement-groupby = \"{0}\"" + Environment.NewLine, xmlItem.Element("statement").Element("groupBy").Value);
 	fileData.AppendFormat("statement-having = \"{0}\"" + Environment.NewLine, xmlItem.Element("statement").Element("having").Value);
 	fileData.AppendFormat("statement-orderby = \"{0}\"" + Environment.NewLine, xmlItem.Element("statement").Element("orderBy").Value);
-	fileData.AppendFormat("notes = \"{0}\"" + Environment.NewLine, xmlItem.Element("notes").Value);
+	if (!string.IsNullOrWhiteSpace(xmlItem.Element("notes").Value))
+	{
+		fileData.AppendFormat("notes = \"{0}\"" + Environment.NewLine, xmlItem.Element("notes").Value);
+	}
 
 
 
