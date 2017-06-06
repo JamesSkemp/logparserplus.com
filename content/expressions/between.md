@@ -12,5 +12,5 @@ title = "between"
 The BETWEEN operator determines if a given field-expression belongs to a specified interval.
 
 #### Examples
-- `sc-status BETWEEN 400 AND 499`
-Returns requests with a status code from 400 to 499, inclusive.
+- `sc-status BETWEEN 400 AND 499`  
+ Returns requests with a status code from 400 to 499, inclusive.
