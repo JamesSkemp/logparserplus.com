@@ -4,7 +4,7 @@
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-	<title>{{ .Title }}</title>
+	<title>{{ if isset .Params "title" }}{{ .Title }}{{ else if isset .Params "name" }}{{ .Params.name }} - {{ .Site.Title }}{{ else }}{{ .Site.Title }} {{ end }}</title>
 	<meta name="application-name" content="Log Parser Plus - Queries to help you analyze logs"/>
 	<meta name="msapplication-starturl" content="/" />
 	<meta name="msapplication-task" content="name=Articles;action-uri=/Article?pin=1;icon-uri=/Content/Articles.ico" />
