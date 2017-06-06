@@ -8,7 +8,9 @@
 		{{ range .Data.Pages.Reverse }}
 			<div class="expressionItem" id="expression_{{ .Title }}">
 				<h3>{{ .Params.name }}</h3>
-				{{ .Content }}
+				<div>
+					{{ .Content }}
+				</div>
 			</div>
 		{{ end }}
 
