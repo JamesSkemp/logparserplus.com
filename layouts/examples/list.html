@@ -1,0 +1,42 @@
+{{ partial "header.html" . }}
+	<div id="content">
+		{{ partial "ad.html" . }}
+
+		<h2>Log Parser Example Queries</h2>
+
+		<p>The following queries can be run with Log Parser. In every case (except if noted) the FROM and INTO statements should be modified based on your needs.</p>
+		<p>Query suggestions or questions are welcome, and can be email to <span style="font-weight:bold;">strivinglife [at] gmail dot com</span>.</p>
+
+		{{ range .Data.Pages }}
+			<div class="queryItem" id="query_{{ .Params.id }}">
+				<h3 class="queryName">{{ .Params.name }}</h3>
+				<span class="queryDescription">{{ .Params.description }}</span>
+				<div class="queryKeywords" id='queryKeywords_{{ .Params.id }}'>
+					{{ if isset .Params "keywords" }}
+					<span>Keywords:</span>
+					<ul>
+						{{ range sort .Params.keywords }}
+						<li>{{ . }}</li>
+						{{ end }}
+					</ul>
+					{{ end }}
+				</div>
+
+				<div class="queryStatement">
+				<span>Statement:</span>
+				<div class="queryCommand">
+					<pre class="code"><code class="logparser">logparser {{ .Params.statementParameters }} "SELECT {{ .Params.statementSelect }}{{ if isset .Params "statementusing" }} USING {{.Params.statementUsing }}{{ end }}{{ if isset .Params "statementinto" }} INTO {{.Params.statementInto }}{{ end }}{{ if isset .Params "statementfrom" }} FROM {{.Params.statementFrom }}{{ end }}{{ if isset .Params "statementwhere" }} WHERE {{.Params.statementWhere }}{{ end }}{{ if isset .Params "statementgroupby" }} GROUP BY {{.Params.statementGroupby }}{{ end }}{{ if isset .Params "statementhaving" }} HAVING {{.Params.statementHaving }}{{ end }}{{ if isset .Params "statementorderby" }} ORDER BY {{.Params.statementOrderby }}{{ end }}"</code></pre>
+				</div>
+				</div>
+				{{ if isset .Params "notes" }}
+				<span class="queryNote"><span>Notes:</span> {{ .Params.notes }}
+				{{ end }}
+				<a href="{{ .Params.id }}">Leave a comment on this query</a>.
+				</span>
+			</div>
+		{{ end }}
+
+		{{ partial "disqus.html" . }}
+
+	</div>
+{{ partial "footer.html" . }}
