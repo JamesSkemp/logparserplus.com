@@ -46,7 +46,7 @@ foreach (var xmlItem in xmlItems)
 	{
 		fileData.AppendFormat("keywords = [\"{0}\"]" + Environment.NewLine, string.Join("\", \"", keywords));
 	}
-	fileData.AppendFormat("statementParameters = \"{0}\"" + Environment.NewLine, xmlItem.Element("statement").Element("parameters").Value);
+	fileData.AppendFormat("statementParameters = \"{0}\"" + Environment.NewLine, xmlItem.Element("statement").Element("parameters").Value.Replace("\"", "\\\""));
 	fileData.AppendFormat("statementSelect = \"{0}\"" + Environment.NewLine, xmlItem.Element("statement").Element("select").Value);
 	fileData.AppendFormat("statementUsing = \"{0}\"" + Environment.NewLine, xmlItem.Element("statement").Element("using").Value);
 	fileData.AppendFormat("statementInto = \"{0}\"" + Environment.NewLine, xmlItem.Element("statement").Element("into").Value);
