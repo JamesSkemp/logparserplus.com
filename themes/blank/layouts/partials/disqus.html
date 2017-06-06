@@ -1,4 +1,6 @@
-<!--<div id="disqus_thread"></div>
+<br class="clear:both;" />
+<div id="disqus_thread"></div>
+{{ if ne (printf "%v" $.Site.BaseURL) "http://localhost:1313/" }}
 <script type="text/javascript">
 	var disqus_shortname = 'logparserplus';
 
@@ -10,5 +12,6 @@
 		dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
 		(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
 	})();
-</script>-->
+</script>
+{{ end }}
 <a href="http://disqus.com" class="dsq-brlink">blog comments powered by <span class="logo-disqus">Disqus</span></a>
