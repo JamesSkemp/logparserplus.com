@@ -27,7 +27,7 @@ var filePath = "";
 foreach (var xmlItem in xmlItems)
 {
 	xmlItem.Dump();
-	
+
 	filePath = mdPath + xmlItem.Attribute("id").Value + ".md";
 
 	if (File.Exists(filePath))
@@ -46,15 +46,42 @@ foreach (var xmlItem in xmlItems)
 	{
 		fileData.AppendFormat("keywords = [\"{0}\"]" + Environment.NewLine, string.Join("\", \"", keywords));
 	}
-	fileData.AppendFormat("statementParameters = \"{0}\"" + Environment.NewLine, xmlItem.Element("statement").Element("parameters").Value.Replace("\"", "\\\""));
-	fileData.AppendFormat("statementSelect = \"{0}\"" + Environment.NewLine, xmlItem.Element("statement").Element("select").Value);
-	fileData.AppendFormat("statementUsing = \"{0}\"" + Environment.NewLine, xmlItem.Element("statement").Element("using").Value);
-	fileData.AppendFormat("statementInto = \"{0}\"" + Environment.NewLine, xmlItem.Element("statement").Element("into").Value);
-	fileData.AppendFormat("statementFrom = \"{0}\"" + Environment.NewLine, xmlItem.Element("statement").Element("from").Value);
-	fileData.AppendFormat("statementWhere = \"{0}\"" + Environment.NewLine, xmlItem.Element("statement").Element("where").Value);
-	fileData.AppendFormat("statementGroupby = \"{0}\"" + Environment.NewLine, xmlItem.Element("statement").Element("groupBy").Value);
-	fileData.AppendFormat("statementHaving = \"{0}\"" + Environment.NewLine, xmlItem.Element("statement").Element("having").Value);
-	fileData.AppendFormat("statementOrderby = \"{0}\"" + Environment.NewLine, xmlItem.Element("statement").Element("orderBy").Value);
+	if (!string.IsNullOrWhiteSpace(xmlItem.Element("statement").Element("parameters").Value))
+	{
+		fileData.AppendFormat("statementParameters = \"{0}\"" + Environment.NewLine, xmlItem.Element("statement").Element("parameters").Value.Replace("\"", "\\\""));
+	}
+	if (!string.IsNullOrWhiteSpace(xmlItem.Element("statement").Element("select").Value))
+	{
+		fileData.AppendFormat("statementSelect = \"{0}\"" + Environment.NewLine, xmlItem.Element("statement").Element("select").Value);
+	}
+	if (!string.IsNullOrWhiteSpace(xmlItem.Element("statement").Element("using").Value))
+	{
+		fileData.AppendFormat("statementUsing = \"{0}\"" + Environment.NewLine, xmlItem.Element("statement").Element("using").Value);
+	}
+	if (!string.IsNullOrWhiteSpace(xmlItem.Element("statement").Element("into").Value))
+	{
+		fileData.AppendFormat("statementInto = \"{0}\"" + Environment.NewLine, xmlItem.Element("statement").Element("into").Value);
+	}
+	if (!string.IsNullOrWhiteSpace(xmlItem.Element("statement").Element("from").Value))
+	{
+		fileData.AppendFormat("statementFrom = \"{0}\"" + Environment.NewLine, xmlItem.Element("statement").Element("from").Value);
+	}
+	if (!string.IsNullOrWhiteSpace(xmlItem.Element("statement").Element("where").Value))
+	{
+		fileData.AppendFormat("statementWhere = \"{0}\"" + Environment.NewLine, xmlItem.Element("statement").Element("where").Value);
+	}
+	if (!string.IsNullOrWhiteSpace(xmlItem.Element("statement").Element("groupBy").Value))
+	{
+		fileData.AppendFormat("statementGroupby = \"{0}\"" + Environment.NewLine, xmlItem.Element("statement").Element("groupBy").Value);
+	}
+	if (!string.IsNullOrWhiteSpace(xmlItem.Element("statement").Element("having").Value))
+	{
+		fileData.AppendFormat("statementHaving = \"{0}\"" + Environment.NewLine, xmlItem.Element("statement").Element("having").Value);
+	}
+	if (!string.IsNullOrWhiteSpace(xmlItem.Element("statement").Element("orderBy").Value))
+	{
+		fileData.AppendFormat("statementOrderby = \"{0}\"" + Environment.NewLine, xmlItem.Element("statement").Element("orderBy").Value);
+	}
 	if (!string.IsNullOrWhiteSpace(xmlItem.Element("notes").Value))
 	{
 		fileData.AppendFormat("notes = \"{0}\"" + Environment.NewLine, xmlItem.Element("notes").Value);
