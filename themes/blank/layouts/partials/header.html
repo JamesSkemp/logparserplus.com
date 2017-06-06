@@ -32,22 +32,20 @@
 	{{ .Hugo.Generator }}
 </head>
 <body>
-	<header>
-		<a href="{{ .Site.BaseURL }}">{{ .Site.Title }}</a>
-		<nav>
-			<ul>
-				{{ range .Site.Menus.main }}
-				<li><a href="{{ .URL | relURL }}">{{ .Name }}</a></li>
-				{{ end }}
-			</ul>
-		</nav>
-	</header>
 	<div id="siteWrapper">
-		<div id="header">
+		<header id="header">
 			<h1><img src="/Content/logo.jpg" alt="Log Parser Plus" title="Log Parser Plus" style="width:550px;height:80px;" /><span>Log Parser Plus</span></h1>
 			<p class="subtitle">Queries to help you analyze logs</p>
-		</div>
-		<div id="menu">
+			<!--<a href="{{ .Site.BaseURL }}">{{ .Site.Title }}</a>
+			<nav>
+				<ul>
+					{{ range .Site.Menus.main }}
+					<li><a href="{{ .URL | relURL }}">{{ .Name }}</a></li>
+					{{ end }}
+				</ul>
+			</nav>-->
+		</header>
+		<nav id="menu">
 			<ul>
 				<li><a href="/">Home</a></li>
 				<li><a href="/article">Articles</a></li>
@@ -56,4 +54,4 @@
 				<li><a href="/examples">Example queries</a></li>
 				<li><a href="/Home/Feedback">Feedback</a></li>
 			</ul>
-		</div>
+		</nav>
