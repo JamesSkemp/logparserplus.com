@@ -110,7 +110,8 @@ h1, h2, h3, h4, h5, h6
 }
 .functionType {
 	font-style:italic;
-	margin-left:1em;
+	margin-left:1.5em;
+	padding:.5em;
 }
 .functionType span {
 	font-style:normal;
@@ -119,6 +120,9 @@ h1, h2, h3, h4, h5, h6
 .functionExamples ul li span, .expressionExamples ul li span {
 	display:block;
 	font-family:Courier New;
+}
+.functionRelated {
+	padding:.5em;
 }
 .functionRelated ul {
 	display:inline;

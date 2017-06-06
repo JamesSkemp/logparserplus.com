@@ -1,0 +1,33 @@
+{{ partial "header.html" . }}
+	<div id="content">
+		{{ partial "ad.html" . }}
+
+		<h2>Function listing</h2>
+		<p>The following functions are available within Log Parser.</p>
+
+		{{ range .Data.Pages }}
+			<div class="functionItem" id="function_{{ .Params.name }}">
+				<h3>{{ .Params.name }}</h3>
+				<span class="functionSyntax">{{ .Params.syntax }}</span>
+				<span class="functionDescription">{{ .Params.description }}</span>
+				<span class="functionType"><span>Type:</span> {{ .Params.type }}</span>
+				<div class="functionRelated" id="related_{{ .Params.name}}">
+					{{ if isset .Params "related" }}
+					<span>See also:</span>
+					<ul>
+						{{ range sort .Params.related }}
+						<li><a href="#function_{{ . }}">{{ . }}</a></li>
+						{{ end }}
+					</ul>
+					{{ end }}
+				</div>
+				<div class="functionExamples" id="examples_{{ .Params.name }}">
+					{{ .Content }}
+				</div>
+			</div>
+		{{ end }}
+
+		{{ partial "disqus.html" . }}
+
+	</div>
+{{ partial "footer.html" . }}
