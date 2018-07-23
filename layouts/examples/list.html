@@ -29,7 +29,7 @@
 				</div>
 				</div>
 				{{ if isset .Params "notes" }}
-				<span class="queryNote"><span>Notes:</span> {{ .Params.notes }}
+				<span class="queryNote"><span>Notes:</span> {{ .Params.notes | safeHTML }}
 				{{ end }}
 				<a href="{{ .Params.id }}">Leave a comment on this query</a>.
 				</span>
